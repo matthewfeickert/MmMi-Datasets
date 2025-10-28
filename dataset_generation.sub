@@ -34,7 +34,7 @@ transfer_input_files    = \
                         models, \
                         output_dir, \
                         training, \
-                        generation_arguments/Case4_generation_arguments.txt, \
+                        generation_arguments, \
 
 
 # Specify the name of the log, standard error, and standard output (or "screen output") files. Wherever you see $(Cluster), HTCondor will insert the
