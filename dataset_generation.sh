@@ -6,10 +6,13 @@ JOB_ID="$1"
 
 nvidia-smi
 
+echo "# Check directory contents"
 ls -lhtra
 
+echo "# Check train contents"
 ls -lhtra train/
 
+echo "# Check tree structure"
 tree .
 
 # python dataset_generation.py @generation_arguments/galaxy_rot_curve_DAG.txt --sample_seed ${JOB_ID} --job_id ${JOB_ID}
