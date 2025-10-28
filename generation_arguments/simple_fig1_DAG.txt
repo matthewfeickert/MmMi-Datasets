@@ -16,7 +16,7 @@
 # --job_id 0
 --debug 0
 --generation_paradigm constructive
---calculate_MI
+--calculate_MI numerical
 
 # Constructive Method Arguments
 --N_mod 2
