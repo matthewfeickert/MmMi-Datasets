@@ -7,4 +7,4 @@ JOB_ID="$1"
 nvidia-smi
 python dataset_generation.py @generation_arguments/galaxy_rot_curve_DAG.txt --sample_seed ${JOB_ID} --job_id ${JOB_ID}
 
-echo "Finished job ${JOB_ID} on `whoami`@`hostname`"
+echo "Finished job ${JOB_ID} on $(whoami)@$(hostname)"
