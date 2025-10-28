@@ -60,4 +60,4 @@ gpus_minimum_memory       = 11264
 +GPUJobLength             = "short"
 
 # Tell HTCondor to run 3 instances of our job:
-queue 10
+queue 1
