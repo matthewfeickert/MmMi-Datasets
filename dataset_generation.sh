@@ -6,6 +6,12 @@ JOB_ID="$1"
 
 nvidia-smi
 
+ls -lhtra
+
+ls -lhtra train/
+
+tree .
+
 # python dataset_generation.py @generation_arguments/galaxy_rot_curve_DAG.txt --sample_seed ${JOB_ID} --job_id ${JOB_ID}
 python dataset_generation.py @generation_arguments/simple_fig1_DAG.txt --sample_seed ${JOB_ID} --job_id ${JOB_ID}
 
