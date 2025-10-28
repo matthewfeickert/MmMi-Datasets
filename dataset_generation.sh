@@ -12,10 +12,7 @@ ls -lhtra
 echo "# Check train contents"
 ls -lhtra train/
 
-echo "# Check tree structure"
-tree .
-
 # python dataset_generation.py @generation_arguments/galaxy_rot_curve_DAG.txt --sample_seed ${JOB_ID} --job_id ${JOB_ID}
-python dataset_generation.py @generation_arguments/simple_fig1_DAG.txt --sample_seed ${JOB_ID} --job_id ${JOB_ID}
+python dataset_generation.py @generation_arguments/simple_fig1_DAG.txt --sample_seed "${JOB_ID}" --job_id "${JOB_ID}"
 
 echo "Finished job ${JOB_ID} on $(whoami)@$(hostname)"
